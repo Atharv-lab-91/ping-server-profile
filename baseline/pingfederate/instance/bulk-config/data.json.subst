@@ -441,6 +441,24 @@
         },
         {
             "operationType": "SAVE",
+            "items": [{
+                "password": "${administrativeAccounts_items_Administrator_password}",
+                "roles": [
+                    "CRYPTO_ADMINISTRATOR",
+                    "ADMINISTRATOR",
+                    "EXPRESSION_ADMINISTRATOR",
+                    "USER_ADMINISTRATOR",
+                    "DATA_COLLECTION_ADMINISTRATOR"
+                ],
+                "auditor": false,
+                "description": "Initial administrator user.",
+                "active": true,
+                "username": "Administrator"
+            }],
+            "resourceType": "/administrativeAccounts"
+        },
+        {
+            "operationType": "SAVE",
             "items": [{"crlSettings": {
                 "nextRetryMinsWhenNextUpdateInPast": 60,
                 "verifyCrlSignature": true,
