@@ -442,7 +442,6 @@
         {
             "operationType": "SAVE",
             "items": [{
-                "password": "${administrativeAccounts_items_Administrator_password}",
                 "roles": [
                     "CRYPTO_ADMINISTRATOR",
                     "ADMINISTRATOR",
