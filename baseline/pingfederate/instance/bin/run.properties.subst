@@ -47,4 +47,4 @@ javax.net.ssl.sessionCacheSize=5000
 org.apache.xml.security.ignoreLineBreaks=true
 # com.unboundid.ldap.sdk.debug.type=LDAP
 com.pingidentity.tapestry.services.CustomHomeService=ReactHome
-pf.admin.password=${PF_ADMIN_PASSWORD}
+# pf.admin.password=${PF_ADMIN_PASSWORD}
