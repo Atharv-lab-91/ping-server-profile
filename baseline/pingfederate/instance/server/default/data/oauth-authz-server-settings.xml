@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:OAuthConfig enableOAuth="true" authzCodeLength="30" authzCodeTimeout="60" restrictPlainPKCE="false" includeIssuerInAuthzResponse="false" rollRefreshTokens="false" refreshTokenRollingGracePeriod="60" rollingInterval="0" rollingIntervalTimeUnit="h" refreshTokenLength="42" atmIdForOAuthGrantManagement="" scopeForOAuthGrantManagement="" globalPersistentGrantExpirationTime="-1" globalPersistentGrantExpirationTimeUnit="d" globalPersistentGrantIdleTimeout="30" globalPersistentGrantIdleTimeoutTimeUnit="d" tokenEndpointBaseUrl="" userAuthzUrl="" registeredAuthzPath="" pendingAuthzTimeout="600" bypassActivationCodeConfirmation="false" devicePollingInterval="5" activationCodeCheckMode="AFTER_AUTHENTICATION" enableCookielessUserAuthzAuthnApi="false" returnIdTokenOnOpenIdWithDeviceAuthzGrant="true" clientSecretRetentionPeriod="0" authzConsentSetting="INTERNAL" parTimeout="60" parRefLength="24" parStatus="ENABLED" allowUnidentifiedClientROCreds="false" allowUnidentifiedClientExtensionGrants="false" jwtSecuredAuthorizationResponseModeLifetime="600" dpopProofRequireNonce="false" dpopProofLifetimeSeconds="120" dpopProofEnforceReplayPrevention="false" bypassAuthorizationForApprovedConsents="false" consentLifetimeDays="-1" requireOfflineAccessScopeToIssueRefreshTokens="false" offlineAccessRequireConsentPrompt="false" xmlns:urn="urn:pingidentity.com:pf:oauth:conf">
+    <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.Rrg4HjHXdbHCsAEU" tokenManagerId="openReferenceTokenATM">
+        <urn1:AttributeMap Name="cosent_id" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.consent_id</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
+    <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.GglTMkh2yRDazszk" tokenManagerId="obReferenceToken">
+        <urn1:AttributeMap Name="ln" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.ln</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="subject" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="dbID" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.dbID</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="fn" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.fn</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
+    <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.GglTMkh2yRDazszk" tokenManagerId="obRefIDATM">
+        <urn1:AttributeMap Name="fn" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.fn</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
+    <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.lIMKcKatwXgIErG5" tokenManagerId="openReferenceTokenATM">
+        <urn1:AttributeMap Name="cosent_id" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.consent_id</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
+    <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.obapc" tokenManagerId="obatm">
+        <urn1:AttributeMap Name="iss" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>apc.subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
+    <urn:ApcToUserKeyMapping sourcePluginId="lIMKcKatwXgIErG5">
+        <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:ApcToUserKeyMapping>
+    <urn:ApcToUserKeyMapping sourcePluginId="GglTMkh2yRDazszk">
+        <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>dbID</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>dbID</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:ApcToUserKeyMapping>
+    <urn:ApcToUserKeyMapping sourcePluginId="obapc">
+        <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:ApcToUserKeyMapping>
+    <urn:ApcToUserKeyMapping sourcePluginId="Rrg4HjHXdbHCsAEU">
+        <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:ApcToUserKeyMapping>
+    <urn:ReuseExistingPersistentGrantForGrant>implicit</urn:ReuseExistingPersistentGrantForGrant>
+    <urn:AllowAutoAuthzForExistingPersistentGrant>implicit</urn:AllowAutoAuthzForExistingPersistentGrant>
+</urn:OAuthConfig>

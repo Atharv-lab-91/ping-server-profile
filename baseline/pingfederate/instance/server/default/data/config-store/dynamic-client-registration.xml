@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:config xmlns:c="http://www.sourceid.org/2004/05/config">
+    <c:item name="prefix">dc-</c:item>
+    <c:item name="RegistrationAccessTokenLength">28</c:item>
+    <c:map name="dynamic-client-registration">
+        <c:item name="DCRPOLICY">com.pingidentity.clientregistration.OpenBankingPlugin</c:item>
+    </c:map>
+    <c:map name="dynamic-client-registration-parents"/>
+</c:config>

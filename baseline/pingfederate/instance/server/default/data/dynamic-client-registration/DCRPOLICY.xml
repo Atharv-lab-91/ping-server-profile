@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" lastModified="2026-02-08T20:23:54.009+05:30" name="Dcr policy" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Issuer">OpenBanking Ltd</urn:Field>
+        <urn:Field name="JWKS URL">http://localhost:8080/ob-directory/.well-known/jwks.json</urn:Field>
+        <urn:Field name="Audience">JDFNWBTGZ00dAqAYIBs0xNW8btuIdiBuFnX</urn:Field>
+        <urn:Field name="ECDSA">false</urn:Field>
+        <urn:Field name="RSA-PSS">true</urn:Field>
+        <urn:Field name="RSA">true</urn:Field>
+        <urn:Field name="Revoked JWKS validation">false</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Revoked JWKS validation">false</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedAttributesAdditionalProperties/>
+</urn:PluginConfiguration>

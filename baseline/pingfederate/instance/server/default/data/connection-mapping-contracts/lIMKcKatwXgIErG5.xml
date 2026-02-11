@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c2c:c2cContract id="lIMKcKatwXgIErG5" name="openTokenPolicyContract" lastModified="2026-01-28T12:46:12.063+05:30" xmlns:c2c="http://pingidentity.com/2014/10/c2cContracts">
+    <c2c:extendedAttributes>
+        <c2c:attr name="consent_id"/>
+    </c2c:extendedAttributes>
+</c2c:c2cContract>

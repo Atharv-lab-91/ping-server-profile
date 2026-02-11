@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" uniqueUserKeyField="pf_none" isInheritExtendedContractAttributes="false" lastModified="2026-01-12T13:25:25.424+05:30" name="obRefID" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Authentication Endpoint">http://127.0.0.1:3000/login</urn:Field>
+        <urn:Field name="User Name">saurabh</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiVzVBcHRmeWhzQyIsInZlcnNpb24iOiIxMy4wLjAuNiJ9..rIFCfUp1PnvRP8culo82OQ.BgBQ5D-ilo40UyGYC3qhrA.T3YcN6DpIkbqMu5xseOSQA</urn:Field>
+        <urn:Field name="Allowed Subject DN"/>
+        <urn:Field name="Allowed Issuer DN"/>
+        <urn:Field name="Relax DN Matching">false</urn:Field>
+        <urn:Field name="Access Token Manager"/>
+        <urn:Field name="Allowed Bearer Access Token Client IDs"/>
+        <urn:Field name="Required Bearer Access Token Scopes"/>
+        <urn:Field name="Logout Service Endpoint"/>
+        <urn:Field name="Logout Service Mode">NONE</urn:Field>
+        <urn:Field name="Logout Mode"/>
+        <urn:Field name="Prefix Referenced Attributes">true</urn:Field>
+        <urn:Field name="Preserve JSON">false</urn:Field>
+        <urn:Field name="Ignore Untracked HTTP Parameters">true</urn:Field>
+        <urn:Field name="Send Request Parameters">NONE</urn:Field>
+        <urn:Field name="Include Null Attributes"/>
+        <urn:Field name="Transport Mode">2</urn:Field>
+        <urn:Field name="Reference Duration">3</urn:Field>
+        <urn:Field name="Reference Length">30</urn:Field>
+        <urn:Field name="Require SSL/TLS">true</urn:Field>
+        <urn:Field name="Outgoing Attribute Format">JSON</urn:Field>
+        <urn:Field name="Incoming Attribute Format">JSON</urn:Field>
+        <urn:Field name="Skip Host Name Validation ">false</urn:Field>
+        <urn:Field name="Relax Password Requirements">false</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Prefix Referenced Attributes">true</urn:Field>
+        <urn:Field name="Preserve JSON">false</urn:Field>
+        <urn:Field name="Ignore Untracked HTTP Parameters">true</urn:Field>
+        <urn:Field name="Send Request Parameters">NONE</urn:Field>
+        <urn:Field name="Include Null Attributes"/>
+        <urn:Field name="Transport Mode">2</urn:Field>
+        <urn:Field name="Reference Duration">3</urn:Field>
+        <urn:Field name="Reference Length">30</urn:Field>
+        <urn:Field name="Require SSL/TLS">true</urn:Field>
+        <urn:Field name="Outgoing Attribute Format">JSON</urn:Field>
+        <urn:Field name="Incoming Attribute Format">JSON</urn:Field>
+        <urn:Field name="Skip Host Name Validation ">false</urn:Field>
+        <urn:Field name="Relax Password Requirements">false</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>ln</urn:AttributeName>
+        <urn:AttributeName>dbID</urn:AttributeName>
+        <urn:AttributeName>fn</urn:AttributeName>
+        <urn:AttributeName>auth_status</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+    <urn:ExtendedAttributesAdditionalProperties/>
+    <urn:UniqueKeyField>dbID</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="ln" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>ln</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="subject" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="dbID" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>dbID</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="fn" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>fn</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="auth_status" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>auth_status</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

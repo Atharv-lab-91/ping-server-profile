@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adm:administrative-users xmlns:adm="http://pingidentity.com/2006/01/admin-users">
+    <adm:user>
+        <adm:user-name>auditor</adm:user-name>
+        <adm:salt/>
+        <adm:hash>RAF1_en7HovfuePJLKEzL3s5tOj-g-keR0H92tZz8eE.I-nme6b2.2</adm:hash>
+        <adm:phone-number/>
+        <adm:email-address/>
+        <adm:department/>
+        <adm:description/>
+        <adm:admin-manager>false</adm:admin-manager>
+        <adm:admin>false</adm:admin>
+        <adm:crypto-manager>false</adm:crypto-manager>
+        <adm:expression-manager>false</adm:expression-manager>
+        <adm:data-collection-admin>false</adm:data-collection-admin>
+        <adm:auditor>true</adm:auditor>
+        <adm:active>true</adm:active>
+        <adm:password-change-required>true</adm:password-change-required>
+    </adm:user>
+    <adm:user>
+        <adm:user-name>saurabh</adm:user-name>
+        <adm:salt/>
+        <adm:hash>CIHRUm6NE8ziKYUB5WUQnbdUtYX1Ak70ptHnHlOrr2Q.Ok5jSOJO.2</adm:hash>
+        <adm:phone-number/>
+        <adm:email-address/>
+        <adm:department/>
+        <adm:description/>
+        <adm:admin-manager>true</adm:admin-manager>
+        <adm:admin>true</adm:admin>
+        <adm:crypto-manager>true</adm:crypto-manager>
+        <adm:expression-manager>true</adm:expression-manager>
+        <adm:data-collection-admin>true</adm:data-collection-admin>
+        <adm:auditor>false</adm:auditor>
+        <adm:active>true</adm:active>
+        <adm:password-change-required>false</adm:password-change-required>
+    </adm:user>
+    <adm:user>
+        <adm:user-name>Administrator</adm:user-name>
+        <adm:salt/>
+        <adm:hash>446rsWCTJX6RZhhEa-Tyuv2WlVi95NdsNUYJNDG38zA.UkhX29_4.2</adm:hash>
+        <adm:phone-number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <adm:email-address xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <adm:department xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <adm:description>Initial administrator user</adm:description>
+        <adm:admin-manager>true</adm:admin-manager>
+        <adm:admin>true</adm:admin>
+        <adm:crypto-manager>true</adm:crypto-manager>
+        <adm:expression-manager>true</adm:expression-manager>
+        <adm:data-collection-admin>true</adm:data-collection-admin>
+        <adm:auditor>false</adm:auditor>
+        <adm:active>true</adm:active>
+        <adm:password-change-required>false</adm:password-change-required>
+    </adm:user>
+    <adm:user>
+        <adm:user-name>Shefali</adm:user-name>
+        <adm:salt/>
+        <adm:hash>WsKsBdi0t3CC80aFRwQMN4xjYCtAJ3Jy4H1RYBcE-KM.R7RK-nff.2</adm:hash>
+        <adm:phone-number/>
+        <adm:email-address/>
+        <adm:department/>
+        <adm:description/>
+        <adm:admin-manager>true</adm:admin-manager>
+        <adm:admin>true</adm:admin>
+        <adm:crypto-manager>false</adm:crypto-manager>
+        <adm:expression-manager>false</adm:expression-manager>
+        <adm:data-collection-admin>false</adm:data-collection-admin>
+        <adm:auditor>false</adm:auditor>
+        <adm:active>true</adm:active>
+        <adm:password-change-required>true</adm:password-change-required>
+    </adm:user>
+</adm:administrative-users>

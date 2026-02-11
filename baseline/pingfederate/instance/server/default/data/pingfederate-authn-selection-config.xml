@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AuthnSelectionConfig lastModifiedMillis="1769776903647" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+    <urn:AuthnSelectionTrees>
+        <urn:AuthnSelectionTree treeId="qxES5bGvmXWuC38Th8fOC4e51" treeName="obRefIDPolicy" disabled="true" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">obRefID</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>false</urn:fallbackToSuccess>
+                    <urn:attributeRule>
+                        <urn:SourceType>ADAPTER</urn:SourceType>
+                        <urn:AuthenticationSourceId>obRefID</urn:AuthenticationSourceId>
+                        <urn:IncomingAttr>auth_status</urn:IncomingAttr>
+                        <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                        <urn:ExpectedValue>SUCCESS</urn:ExpectedValue>
+                        <urn:Result>true</urn:Result>
+                    </urn:attributeRule>
+                    <urn:attributeRule>
+                        <urn:SourceType>ADAPTER</urn:SourceType>
+                        <urn:AuthenticationSourceId>obRefID</urn:AuthenticationSourceId>
+                        <urn:IncomingAttr>auth_status</urn:IncomingAttr>
+                        <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                        <urn:ExpectedValue>FAIL</urn:ExpectedValue>
+                        <urn:Result>false</urn:Result>
+                    </urn:attributeRule>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="true">
+                    <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AuthnSourceKey type="ADAPTER">obRefIDConsentAdapter</urn:AuthnSourceKey>
+                        <urn:fallbackToSuccess>false</urn:fallbackToSuccess>
+                        <urn:attributeRule>
+                            <urn:SourceType>ADAPTER</urn:SourceType>
+                            <urn:AuthenticationSourceId>obRefIDConsentAdapter</urn:AuthenticationSourceId>
+                            <urn:IncomingAttr>consent_result</urn:IncomingAttr>
+                            <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                            <urn:ExpectedValue>Allow</urn:ExpectedValue>
+                            <urn:Result>true</urn:Result>
+                        </urn:attributeRule>
+                        <urn:attributeRule>
+                            <urn:SourceType>ADAPTER</urn:SourceType>
+                            <urn:AuthenticationSourceId>obRefIDConsentAdapter</urn:AuthenticationSourceId>
+                            <urn:IncomingAttr>consent_result</urn:IncomingAttr>
+                            <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                            <urn:ExpectedValue>Declined</urn:ExpectedValue>
+                            <urn:Result>false</urn:Result>
+                        </urn:attributeRule>
+                        <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                    </urn:AstAction>
+                    <urn:AstChild context="Fail">
+                        <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </urn:AstChild>
+                    <urn:AstChild context="true">
+                        <urn:AstAction apcId="GglTMkh2yRDazszk" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <urn:AttributeMapping>
+                                <urn1:AttributeMap Name="ln" Type="Adapter" AttributeSourceId="obRefID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>ln</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="obRefID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>subject</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="dbID" Type="Adapter" AttributeSourceId="obRefID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>dbID</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="fn" Type="Adapter" AttributeSourceId="obRefID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>fn</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="consent_result" Type="Adapter" AttributeSourceId="obRefIDConsentAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>consent_result</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                            </urn:AttributeMapping>
+                        </urn:AstAction>
+                    </urn:AstChild>
+                    <urn:AstChild context="false">
+                        <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </urn:AstChild>
+                </urn:AstChild>
+                <urn:AstChild context="false">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+        <urn:AuthnSelectionTree treeId="7gmoZwGcq23LgXdb73Sul0Lr6" treeName="openTokenPolicy" disabled="false" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">openTokenAdapter</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction apcId="lIMKcKatwXgIErG5" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AttributeMapping>
+                            <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="openTokenAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>subject</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="consent_id" Type="Adapter" AttributeSourceId="openTokenAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>consent_id</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:AttributeMapping>
+                    </urn:AstAction>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+        <urn:AuthnSelectionTree treeId="VMqCrOULLYUm7bbmTjSrPMppy" treeName="httpFormPolicy" disabled="true" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">htmlFormAdapter</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction apcId="Rrg4HjHXdbHCsAEU" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AttributeMapping>
+                            <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="htmlFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>username</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="consent_id" Type="Tracked HTTP Parameters" AttributeSourceId="trackedparams" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>consent_id</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:AttributeMapping>
+                    </urn:AstAction>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+    </urn:AuthnSelectionTrees>
+    <urn:DefaultAuthnSources/>
+</urn:AuthnSelectionConfig>

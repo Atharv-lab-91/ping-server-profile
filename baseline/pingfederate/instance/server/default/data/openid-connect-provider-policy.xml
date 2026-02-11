@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:OpenIdConnectProviderPolicy enabled="true" defaultPolicyGroupId="obOPENIDPolicy" trackUserSessionsForLogout="false" xmlns:urn="urn:pingidentity.com:pf:openid:connect:idp:policy">
+    <urn:ProviderPolicyGroup policyId="obOPENIDPolicy" idTokenLife="5" includeSriInIdToken="false" includeUserInfoInIdToken="false" includeSHashInIdToken="false" includeX5tInIdToken="false" idTokenTypHeaderValue="" returnIdTokenOnRefreshGrant="false" returnIdTokenOnTokenExchangeGrant="false" reissueIdTokenHybridFlows="false" allowIdTokenIntrospection="false" policyName="obOPENIDPolicy" accessTokenManagerId="obRefIDATM" lastModified="2026-01-08T17:46:11.543+05:30">
+        <urn:UserInfoMapping>
+            <urn1:AttributeMap Name="sub" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>fn</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </urn:UserInfoMapping>
+        <urn:scopeAttributesMap/>
+        <urn:attributeContractInclusionMap/>
+        <urn:ExtendedAttributesAdditionalProperties/>
+    </urn:ProviderPolicyGroup>
+    <urn:ProviderPolicyGroup policyId="obOpenIDReferencePolicy" idTokenLife="5" includeSriInIdToken="false" includeUserInfoInIdToken="true" includeSHashInIdToken="false" includeX5tInIdToken="false" idTokenTypHeaderValue="" returnIdTokenOnRefreshGrant="false" returnIdTokenOnTokenExchangeGrant="false" reissueIdTokenHybridFlows="false" allowIdTokenIntrospection="false" policyName="obOpenIDReferencePolicy" accessTokenManagerId="obReferenceToken" lastModified="2026-01-15T16:31:41.502+05:30">
+        <urn:UserInfoMapping>
+            <urn1:AttributeMap Name="sub" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>dbID</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="ln" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>ln</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="dbID" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>dbID</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="fn" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>fn</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </urn:UserInfoMapping>
+        <urn:scopeAttributesMap>
+            <urn:item>
+                <urn:key>profile</urn:key>
+                <urn:value>fn</urn:value>
+            </urn:item>
+        </urn:scopeAttributesMap>
+        <urn:attributeContractInclusionMap/>
+        <urn:ExtendedAttributesAdditionalProperties/>
+    </urn:ProviderPolicyGroup>
+    <urn:ProviderPolicyGroup policyId="openTokenPolicy" idTokenLife="5" includeSriInIdToken="false" includeUserInfoInIdToken="true" includeSHashInIdToken="false" includeX5tInIdToken="false" idTokenTypHeaderValue="" returnIdTokenOnRefreshGrant="false" returnIdTokenOnTokenExchangeGrant="false" reissueIdTokenHybridFlows="false" allowIdTokenIntrospection="false" policyName="openTokenPolicy" accessTokenManagerId="openReferenceTokenATM" lastModified="2026-01-28T13:08:46.837+05:30">
+        <urn:UserInfoMapping>
+            <urn1:AttributeMap Name="sub" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>cosent_id</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="consent_id" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>cosent_id</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </urn:UserInfoMapping>
+        <urn:scopeAttributesMap>
+            <urn:item>
+                <urn:key>openid</urn:key>
+                <urn:value>consent_id</urn:value>
+            </urn:item>
+        </urn:scopeAttributesMap>
+        <urn:attributeContractInclusionMap/>
+        <urn:ExtendedAttributesAdditionalProperties/>
+    </urn:ProviderPolicyGroup>
+    <urn:ProviderPolicyGroup policyId="oboidcpolicy" idTokenLife="5" includeSriInIdToken="false" includeUserInfoInIdToken="true" includeSHashInIdToken="true" includeX5tInIdToken="false" idTokenTypHeaderValue="" returnIdTokenOnRefreshGrant="false" returnIdTokenOnTokenExchangeGrant="false" reissueIdTokenHybridFlows="false" allowIdTokenIntrospection="false" policyName="oboidcpolicy" accessTokenManagerId="obatm" lastModified="2026-02-08T20:23:53.907+05:30">
+        <urn:UserInfoMapping>
+            <urn1:AttributeMap Name="sub" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>iss</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </urn:UserInfoMapping>
+        <urn:scopeAttributesMap/>
+        <urn:attributeContractInclusionMap/>
+        <urn:ExtendedAttributesAdditionalProperties/>
+    </urn:ProviderPolicyGroup>
+</urn:OpenIdConnectProviderPolicy>

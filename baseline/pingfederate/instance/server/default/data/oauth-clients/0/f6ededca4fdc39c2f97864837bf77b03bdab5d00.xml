@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
+    <urn:Client client_id="openTokenClient" name="openTokenClient" logo="" secret="WBapsACuPcp20M_3WThSAZtv511G2g3IohulJ3Lsn_A.OxlisbpG.2" persistentGrantExpirationTime="0" enabled="true" lastModified="2026-01-28T13:09:06.584+05:30" creationTime="2026-01-28T12:53:52.332+05:30" bypassApprovalPage="true" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="SECRET" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+        <urn:Description/>
+        <urn:Grant type="refresh_token"/>
+        <urn:Grant type="authorization_code"/>
+        <urn:RedirectUri>https://oauth.pstmn.io/v1/callback</urn:RedirectUri>
+        <urn:SupplementalInfo key="CREATION_TIME" value="1769585032332"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHORIZATION_DETAIL_TYPES" value="false"/>
+        <urn:SupplementalInfo key="LOCKOUT_MAX_MALICIOUS_ACTIONS_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRET_RETENTION_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_MANAGEMENT_API" value="false"/>
+        <urn:SupplementalInfo key="LOGOUT_MODE" value="NONE"/>
+        <urn:SupplementalInfo key="ENABLE_COOKIELESS_AUTHENTICATION_API" value="false"/>
+        <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
+        <urn:SupplementalInfo key="PING_ACCESS_LOGOUT_CAPABLE" value="false"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHENTICATION_API_INIT" value="false"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRETS" value="eyJzZWNyZXRzIjpbXX0="/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_REUSE_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="SECRET_CHANGED_TIME" value="1769585032"/>
+        <urn:SupplementalInfo key="DEVICE_FLOW_SETTING" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="REQUIRE_OFFLINE_ACCESS_SCOPE_TO_ISSUE_REFRESH_TOKENS" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="DEFAULT_ATM_ID" value="openReferenceTokenATM"/>
+        <urn:SupplementalInfo key="RESTRICT_RESPONSE_TYPES" value="false"/>
+        <urn:SupplementalInfo key="REFRESH_TOKEN_ROLLING_GRACE_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE" value="false"/>
+        <urn:SupplementalInfo key="RESTRICT_TO_DEFAULT_ATM" value="false"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_REVOCATION_API" value="false"/>
+        <urn:SupplementalInfo key="VALIDATE_USING_ALL_ELIGIBLE_ATMS" value="false"/>
+        <urn:SupplementalInfo key="ENABLED" value="true"/>
+        <urn:SupplementalInfo key="vnd.ping.policy_group_id" value="openTokenPolicy"/>
+        <urn:SupplementalInfo key="POST_LOGOUT_REDIRECT_URIS" value="[]"/>
+    </urn:Client>
+</urn:Clients>

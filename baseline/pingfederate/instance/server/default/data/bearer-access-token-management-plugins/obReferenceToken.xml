@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AccessTokenManagerConfiguration inheritAccessControlSettings="false" inheritSelectionSettings="false" inheritSessionValidationSettings="false" restrictClients="false" includeSessionIdentifier="false" checkSessionRevocationStatus="false" checkValidAuthnSession="false" updateAuthnSessionActivity="false" defaultSubjectAttribute="" isInheritTokenEndpointContractAttributes="false" isInheritExtendedContractAttributes="false" lastModified="2026-01-15T16:11:14.387+05:30" name="obReferenceToken" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Token Length">28</urn:Field>
+        <urn:Field name="Token Lifetime">120</urn:Field>
+        <urn:Field name="Lifetime Extension Policy">NONE</urn:Field>
+        <urn:Field name="Maximum Token Lifetime"/>
+        <urn:Field name="Lifetime Extension Threshold Percentage">30</urn:Field>
+        <urn:Field name="Mode for Synchronous RPC">3</urn:Field>
+        <urn:Field name="RPC Timeout">500</urn:Field>
+        <urn:Field name="Expand Scope Groups">false</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Mode for Synchronous RPC">3</urn:Field>
+        <urn:Field name="RPC Timeout">500</urn:Field>
+        <urn:Field name="Expand Scope Groups">false</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>ln</urn:AttributeName>
+        <urn:AttributeName>subject</urn:AttributeName>
+        <urn:AttributeName>dbID</urn:AttributeName>
+        <urn:AttributeName>fn</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+    <urn:ExtendedAttributesAdditionalProperties/>
+    <urn:TokenEndpointContractAttributes>
+        <urn:TokenEndpointAttribute name="ln" multiValued="false"/>
+        <urn:TokenEndpointAttribute name="dbID" multiValued="false"/>
+        <urn:TokenEndpointAttribute name="fn" multiValued="false"/>
+    </urn:TokenEndpointContractAttributes>
+</urn:AccessTokenManagerConfiguration>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c2c:c2cContract id="Rrg4HjHXdbHCsAEU" name="htmlFormPolicyContract" lastModified="2026-01-28T13:16:43.169+05:30" xmlns:c2c="http://pingidentity.com/2014/10/c2cContracts">
+    <c2c:extendedAttributes>
+        <c2c:attr name="consent_id"/>
+    </c2c:extendedAttributes>
+</c2c:c2cContract>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c2c:c2cContract id="GglTMkh2yRDazszk" name="obRefIDPolicyContract" lastModified="2026-01-08T16:20:31.169+05:30" xmlns:c2c="http://pingidentity.com/2014/10/c2cContracts">
+    <c2c:extendedAttributes>
+        <c2c:attr name="ln"/>
+        <c2c:attr name="dbID"/>
+        <c2c:attr name="fn"/>
+        <c2c:attr name="consent_result"/>
+    </c2c:extendedAttributes>
+</c2c:c2cContract>

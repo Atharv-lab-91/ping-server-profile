@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:config xmlns:c="http://www.sourceid.org/2004/05/config">
+
+    <!-- Table names -->
+    <c:item name="ScopesTableName">PingFederateOAuthScopes</c:item>
+
+    <!-- Index names -->
+    <c:item name="TypeIndex">PingFederateOAuthScopesType-index</c:item>
+
+    <!--
+        The endpoint override is for testing with a local DynamoDB instance.
+        Provide the local DynamoDB endpoint here. This configuration should not be set for production environment.
+
+        Example configuration:
+        <c:item name="EndpointOverride">http://localhost:8000</c:item>
+    -->
+    <c:item name="EndpointOverride"/>
+
+    <!--
+        Configure the amount of time(in milliseconds) to allow the client to complete the execution of an API call.
+
+        Default configuration:
+        <c:item name="ApiCallTimeout">10000</c:item>
+    -->
+    <c:item name="ApiCallTimeout">10000</c:item>
+
+    <!--
+        Configure the amount of time(in milliseconds) to wait for the http request to finish before timing out.
+
+        Default configuration:
+        <c:item name="ApiCallAttemptTimeout">1000</c:item>
+    -->
+    <c:item name="ApiCallAttemptTimeout">1000</c:item>
+
+    <!--
+        Cache expiration (in seconds) for OAuth scopes and scope groups retrieved from DynamoDB.
+        After this period the cached entry is invalidated and re-fetched.
+
+        Default configuration:
+        <c:item name="cacheExpirySecs">60</c:item>
+    -->
+    <c:item name="cacheExpirySecs">60</c:item>
+
+</c:config>

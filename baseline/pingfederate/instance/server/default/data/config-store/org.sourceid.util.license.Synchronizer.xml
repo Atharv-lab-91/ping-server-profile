@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:item name="00920552:WARN">2026-02-05</con:item>
+    <con:item name="00920552:GRACE">2026-02-13</con:item>
+</con:config>
